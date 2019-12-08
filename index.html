@@ -21,5 +21,10 @@
 
     <!-- User's Script -->
     <script src = "./dist/index.js"></script>
+    <script type="text/javascript">
+    $(window).on('touchmove.noScroll', function(e) {
+    	e.preventDefault();
+    });
+    </script>
 </body>
 </html>
