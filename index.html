@@ -22,9 +22,11 @@
     <!-- User's Script -->
     <script src = "./dist/index.js"></script>
     <script type="text/javascript">
-    $(window).on('touchmove.noScroll', function(e) {
-    	e.preventDefault();
-    });
+    	function handleTouchMove(event) {
+    		event.preventDefault();
+		}
+		//スクロール禁止
+		document.addEventListener('touchmove', handleTouchMove, { passive: false });
     </script>
 </body>
 </html>
