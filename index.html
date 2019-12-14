@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8" />
     <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <!-- Canvas -->
-    <canvas id="SAMPLE" width="1900" height="1000">
+    <div id="wrap">
+    <canvas id="SAMPLE">
         このブラウザは
         <code>&lt;canvas&lt;</code>要素をサポートしていません。
     </canvas>
+    </div>
 
     <!-- Promise-polyfill -->
     <script src = "https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js "> </script>
